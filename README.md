@@ -10,12 +10,12 @@
 <br />
 
 <div align="center">
-  <img src="https://img.shields.io/github/languages/top/rafaelq80/projeto-mario-kart-race?style=flat-square" />
-  <img src="https://img.shields.io/github/repo-size/rafaelq80/projeto-mario-kart-race?style=flat-square" />
-  <img src="https://img.shields.io/github/languages/count/rafaelq80/projeto-mario-kart-race?style=flat-square" />
-  <img src="https://img.shields.io/github/last-commit/rafaelq80/projeto-mario-kart-race?style=flat-square" />
-  <img src="https://img.shields.io/github/issues/rafaelq80/projeto-mario-kart-race?style=flat-square" />
-  <img src="https://img.shields.io/github/issues-pr/rafaelq80/projeto-mario-kart-race?style=flat-square" />
+  <img src="https://img.shields.io/github/languages/top/rafaelq80/projeto-champions-express?style=flat-square" />
+  <img src="https://img.shields.io/github/repo-size/rafaelq80/projeto-champions-express?style=flat-square" />
+  <img src="https://img.shields.io/github/languages/count/rafaelq80/projeto-champions-express?style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/rafaelq80/projeto-champions-express?style=flat-square" />
+  <img src="https://img.shields.io/github/issues/rafaelq80/projeto-champions-express?style=flat-square" />
+  <img src="https://img.shields.io/github/issues-pr/rafaelq80/projeto-champions-express?style=flat-square" />
   <img src="https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen" alt="Status: Concluído">
 </div>
 
@@ -42,7 +42,7 @@ API RESTful para gerenciamento de clubes, jogadores e estatísticas da Champions
 ## ⚙️ Pré-requisitos
 
 - [Node.js](https://nodejs.org/) (v16 ou superior)
-- npm ou yarn
+- npm
 
 <br />
 
@@ -51,7 +51,7 @@ API RESTful para gerenciamento de clubes, jogadores e estatísticas da Champions
 ### 1. Clone o Repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/rafaelq80/projeto-champions-express
 cd projeto-champions-express
 ```
 

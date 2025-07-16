@@ -1,0 +1,59 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+/**
+ * Model Club - Representa um clube de futebol
+ * @description Armazena informações básicas dos clubes participantes
+ */
+model Club {
+  id      Int      @id @default(autoincrement())
+  name    String   @unique
+  players Player[] // Relacionamento 1:N com Player
+  
+  @@map("clubs")
+}
+
+/**
+ * Model Player - Representa um jogador de futebol
+ * @description Armazena informações pessoais e de carreira do jogador
+ */
+model Player {
+  id          Int        @id @default(autoincrement())
+  name        String
+  nationality String
+  position    String
+  clubId      Int        // Chave estrangeira para Club
+  club        Club       @relation(fields: [clubId], references: [id], onDelete: Cascade)
+  statistics  Statistics? // Relacionamento 1:1 com Statistics
+  
+  @@map("players")
+}
+
+/**
+ * Model Statistics - Representa as estatísticas de um jogador
+ * @description Armazena as habilidades e estatísticas técnicas do jogador
+ */
+model Statistics {
+  id         Int     @id @default(autoincrement())
+  overall    Int     // Habilidade geral
+  pace       Int     // Velocidade
+  shooting   Int     // Finalização
+  passing    Int     // Passe
+  dribbling  Int     // Drible
+  defending  Int     // Defesa
+  physical   Int     // Físico
+  playerId   Int     @unique // Chave estrangeira para Player (1:1)
+  player     Player  @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  
+  @@map("statistics")
+}

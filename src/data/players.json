@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Vinicius Jr",
+    "club": "Real Madrid",
+    "nationality": "Brasil",
+    "position": "LW",
+    "statistics": {
+      "Overall": 88,
+      "Pace": 95,
+      "Shooting": 79,
+      "Passing": 74,
+      "Dribbling": 90,
+      "Defending": 29,
+      "Physical": 64
+    }
+  },
+  {
+    "id": 2,
+    "name": "Erling Haaland",
+    "club": "Manchester City",
+    "nationality": "Noruega",
+    "position": "ST",
+    "statistics": {
+      "Overall": 91,
+      "Pace": 89,
+      "Shooting": 92,
+      "Passing": 64,
+      "Dribbling": 72,
+      "Defending": 45,
+      "Physical": 88
+    }
+  },
+  {
+    "id": 3,
+    "name": "Kylian Mbappé",
+    "club": "Paris Saint-Germain",
+    "nationality": "França",
+    "position": "ST",
+    "statistics": {
+      "Overall": 91,
+      "Pace": 97,
+      "Shooting": 89,
+      "Passing": 80,
+      "Dribbling": 92,
+      "Defending": 36,
+      "Physical": 76
+    }
+  },
+  {
+    "id": 4,
+    "name": "Jude Bellingham",
+    "club": "Real Madrid",
+    "nationality": "Inglaterra",
+    "position": "CM",
+    "statistics": {
+      "Overall": 89,
+      "Pace": 78,
+      "Shooting": 84,
+      "Passing": 86,
+      "Dribbling": 87,
+      "Defending": 82,
+      "Physical": 84
+    }
+  },
+  {
+    "id": 5,
+    "name": "Bukayo Saka",
+    "club": "Arsenal",
+    "nationality": "Inglaterra",
+    "position": "RW",
+    "statistics": {
+      "Overall": 86,
+      "Pace": 85,
+      "Shooting": 79,
+      "Passing": 80,
+      "Dribbling": 84,
+      "Defending": 64,
+      "Physical": 72
+    }
+  }
+] 

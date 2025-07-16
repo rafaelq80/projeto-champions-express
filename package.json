@@ -1,0 +1,35 @@
+{
+  "name": "projeto-champions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dist": "tsup src",
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start:watch": "tsx watch --env-file=.env  src/server.ts",
+    "start:dist": "npm run dist && node dist/src/index.js",
+    "migrate": "npx tsx src/scripts/migrate-data.ts",
+    "db:generate": "npx prisma generate",
+    "db:migrate": "npx prisma migrate dev",
+    "db:studio": "npx prisma studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.12.0",
+    "@types/swagger-ui-express": "^4.1.8",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "prisma": "^6.12.0",
+    "sqlite3": "^5.1.7",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
